@@ -1,0 +1,16 @@
+[package]
+name = "grimmfog"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.dev]
+opt-level = 1
+
+[dependencies]
+bevy = { version = "0.10.1", features = ["dynamic_linking"] }
+log = "0.4.19"
+loge = { version = "0.4.2", features = ["file"] }
+rand = "0.8.5"
